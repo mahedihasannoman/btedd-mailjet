@@ -243,9 +243,9 @@ final class BT_EDD_Mailjet_Addon {
 	}
 
 	/**
-	 * When WP has loaded all plugins, trigger the `wcsn_loaded` hook.
+	 * When WP has loaded all plugins, trigger the `plugins_loaded` hook.
 	 *
-	 * This ensures `wcsn_loaded` is called only after all other plugins
+	 * This ensures `plugins_loaded` is called only after all other plugins
 	 * are loaded, to avoid issues caused by plugin directory naming changing
 	 *
 	 * @since 1.0.0
