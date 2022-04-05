@@ -1,0 +1,63 @@
+@import "admin/metabox/meta-box";
+@import "admin/settings";
+
+.wp-list-table.bt-edd-logs .log-level{
+    display: inline;
+    padding: 5px 10px;
+    font-size: 80%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .2em;
+}
+
+/* Log viewer */
+
+/**
+* Add color to levels
+*
+* Descending severity:
+*   emergency, alert -> red
+*   critical, error  -> orange
+*   warning, notice  -> yellow
+*   info             -> blue
+*   debug            -> gree
+*/
+
+.wp-list-table.bt-edd-logs ul {
+	margin-top: 5px;
+    line-height: 1.25;
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.wp-list-table.bt-edd-logs .log-level:empty {
+	display: none;
+}
+
+.wp-list-table.bt-edd-logs .log-level--emergency,
+.wp-list-table.bt-edd-logs .log-level--alert {
+	background-color: #ff4136;
+}
+
+.wp-list-table.bt-edd-logs .log-level--critical,
+.wp-list-table.bt-edd-logs .log-level--error {
+	background-color: #ff851b;
+}
+
+.wp-list-table.bt-edd-logs .log-level--warning,
+.wp-list-table.bt-edd-logs .log-level--notice {
+	color: #222;
+	background-color: #ffdc00;
+}
+
+.wp-list-table.bt-edd-logs .log-level--info {
+	background-color: #0074d9;
+}
+
+.wp-list-table.bt-edd-logs .log-level--debug {
+	background-color: #3d9970;
+}

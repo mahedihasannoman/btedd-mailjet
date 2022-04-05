@@ -1,0 +1,25 @@
+.chosen-container-multi {
+  .chosen-choices {
+    li {
+      float: none !important;
+    }
+  }
+}
+
+.bt_edd_mailjet_field_map {
+  th {
+    padding: 10px;
+  }
+
+  > tbody {
+    > :nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+  }
+}
+.bt_edd_contact_sync_status {
+  margin: 10px 0;
+}
+.bt_edd_sync_status_span{
+  display: none;
+}
