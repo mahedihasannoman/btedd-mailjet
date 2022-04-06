@@ -10,7 +10,7 @@
  * License:     GPLv2+
  * Text Domain: bt-edd-mailjet
  * Domain Path: /i18n/languages/
- * Tested up to: 5.3
+ * Tested up to: 5.9
  */
 
 /**
